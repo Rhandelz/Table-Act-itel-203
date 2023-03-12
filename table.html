@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap");
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Teko", sans-serif;
+      }
+      body {
+        padding: 20px;
+      }
+
+      .table {
+        width: 1300px;
+        height: 650px;
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .table > div {
+        border-bottom: 0.2px solid black;
+        height: 10%;
+        overflow: hidden;
+        transition: 0.5s;
+        display: flex;
+      }
+
+      .table > div > div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 0.2px solid black;
+        font-size: 2rem;
+        transition: 0.5s;
+
+        font-weight: 700;
+      }
+
+      .table > div:hover {
+        height: 50%;
+        background-color: gray;
+        color: white;
+      }
+
+      .table > div:hover .imgimg {
+        opacity: 1;
+      }
+
+      .table > div:hover p {
+        opacity: 0;
+      }
+
+      img {
+        height: 80%;
+        border-radius: 10px;
+        width: 80%;
+      }
+
+      .table > div > table {
+        width: 100%;
+        background-color: green;
+      }
+
+      .table > div > .num {
+        width: 20%;
+      }
+
+      .table > div > .des {
+        width: 30%;
+      }
+
+      .table > div > .imgimg {
+        opacity: 0;
+        position: relative;
+        width: 50%;
+      }
+
+      .table > div > p {
+        position: absolute;
+        right: 20%;
+        color: red;
+        transition: 0.2s;
+      }
+
+      .table > span {
+        width: 100%;
+        background-color: rgba(228, 228, 228, 0.419);
+        display: flex;
+        padding: 20px;
+        margin-bottom: 40px;
+        border-top: solid 0.5px black;
+        border-bottom: solid 0.5px black;
+        border-left: dashed 0.5px black;
+        border-right: dashed 0.5px black;
+      }
+
+      .table > span > div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 2rem;
+        transition: 0.5s;
+
+        font-weight: 700;
+      }
+
+      .table > span > .num {
+        width: 20%;
+      }
+
+      .table > span > .des {
+        width: 30%;
+      }
+
+      .table > span > .imgimg {
+        opacity: 0;
+        position: relative;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table">
+      <span>
+        <div class="num">Id</div>
+        <div class="des">Image Description</div>
+        <div class="imgimg" style="opacity: 1">image</div>
+      </span>
+      <div>
+        <div class="num">1</div>
+        <div class="des">Guitar</div>
+        <div class="imgimg">
+          <img src="./imgsrc/five.webp" alt="" />
+        </div>
+        <p>image cant'load</p>
+      </div>
+      <div>
+        <div class="num">2</div>
+        <div class="des">Dining</div>
+        <div class="imgimg">
+          <img src="./imgsrc/four.jpeg" alt="" />
+        </div>
+        <p>image cant'load</p>
+      </div>
+      <div>
+        <div class="num">3</div>
+        <div class="des">Plates</div>
+        <div class="imgimg">
+          <img src="./imgsrc/pexels-photo-7123019.webp" alt="" />
+        </div>
+        <p>image cant'load</p>
+      </div>
+      <div>
+        <div class="num">4</div>
+        <div class="des">Church</div>
+        <div class="imgimg">
+          <img src="./imgsrc/pexels-photo-5593498.jpeg" alt="" />
+        </div>
+        <p>image cant'load</p>
+      </div>
+      <div>
+        <div class="num">5</div>
+        <div class="des">Sandals</div>
+        <div class="imgimg">
+          <img src="./imgsrc/two.webp" alt="" />
+        </div>
+        <p>image cant'load</p>
+      </div>
+    </div>
+  </body>
+</html>
